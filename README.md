@@ -65,11 +65,3 @@ vagrant ssh
    
    Use the vagrant user for now, password is *vagrant*
 
-
-
-   
-
-   
-   
-   
-
