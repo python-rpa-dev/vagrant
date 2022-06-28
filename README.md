@@ -16,7 +16,7 @@ Setup
    * Download the install files
    * Run the setup and consult the documenation if necessary
 
-   * As an alternative you can use *winget install vagrant* from the command line.
+     * As an alternative you can use *winget install vagrant* from the command line.
 
 3. Spin up the sandboxed test platform
    * If everything went well, open a cmd.exe or any other console application and type
@@ -42,7 +42,8 @@ cd C:\vms\vagrant
 
 4. Create sandbox
 
-   * Clone this repository. Note: If you have not install git, run this from the command line
+   * Clone this repository. Note: If you have not installed git, run this from the command line
+
 ```
 winget install git
 ```
@@ -53,6 +54,7 @@ cd sandbox
 ```    
 
    * Launch vagrant 
+
    
 ```   
 vagrant up
@@ -69,3 +71,4 @@ vagrant ssh
    * Open the app *Oracle VM VirtualBox* from your Desktop and use it to display the VMs GUI
    
    Use the vagrant user for now, password is *vagrant*
+
