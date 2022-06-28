@@ -5,70 +5,62 @@ Why do you need to do this?
 If you do not want to run the RPA client on your main desktop, this will
 make sure that it is sandboxed in its own environment.
 
-Setup
+## Setup
 1. Install VirtualBox from https://www.virtualbox.org/
-   * Go to *Downloads* and choose the appropriate platform package
-   * Also download *Virtual Extension Package*
-   * Run the setup and consult the documenation if necessary
+    - Go to *Downloads* and choose the appropriate platform package
+    - Also download *Virtual Extension Package*
+    - Run the setup and consult the documenation if necessary
 
-2. Install vagrant from https://www.vagrantup.com/downloads
-   * Make sure you have selected the downloads for your platform
-   * Download the install files
-   * Run the setup and consult the documenation if necessary
-
-     * As an alternative you can use *winget install vagrant* from the command line.
+2. Install vagrant from https://www.vagrantup.com/downloads or use installer[^1]
+    - Make sure you have selected the downloads for your platform
+    - Download the install files
+    - Run the setup and consult the documenation if necessary 
 
 3. Spin up the sandboxed test platform
-   * If everything went well, open a cmd.exe or any other console application and type
+    - If everything went well, open a cmd.exe or any other console application and type  
 
-```
-vagrant help
-```
+    ```vagrant help```
 
-   This should return something like    
+    This should return something like    
 
-```
-    Usage: vagrant [options] <command> [<args>]
-
+    ```
+    Usage: vagrant [options] <command> \[<args>\]
+    
     -h, --help                       Print this help.
-```
+    ```
 
-   * Create a directory where you want to store the setup scripts and credentials. This is just an example (in Windows 10):   
+    - Create a directory where you want to store the setup scripts and credentials.
+    
+    This is just an example (in Windows):  
 
-```
-md C:\vms\vagrant
-cd C:\vms\vagrant
-```
+    ```
+    md C:\vms\vagrant
+    cd C:\vms\vagrant
+    ```
 
 4. Create sandbox
 
-   * Clone this repository. Note: If you have not installed git, run this from the command line
+    - Clone this repository with git from the command line into a folder.[^2]
+    
+    ```
+    git clone https://github.com/python-rpa-dev/vagrant.git sandbox
+    cd sandbox
+    ```    
 
-```
-winget install git
-```
-
-```
-git clone https://github.com/python-rpa-dev/vagrant.git sandbox
-cd sandbox
-```    
-
-   * Launch vagrant 
-
+    - Launch vagrant 
    
-```   
-vagrant up
-```    
+    ```vagrant up```    
 
-   If everything went well, you should have a working virtual machine with a linux desktop after a few minutes, *ymmv*
+    If everything went well, you should have a working virtual machine with a linux desktop after a few minutes, *ymmv*
 
-   * Test if you can connect to the vm command line
+    - Test if you can connect to the vm command line
 
-```
-vagrant ssh
-```    
+    ```vagrant ssh```    
 
-   * Open the app *Oracle VM VirtualBox* from your Desktop and use it to display the VMs GUI
+    - Open the app *Oracle VM VirtualBox* from your Desktop and use it to display the VMs GUI
    
-   Use the vagrant user for now, password is *vagrant*
+    Use the vagrant user for now, password is *vagrant*
 
+---
+[^1]: As an alternative you can use `winget install vagrant` for Windows from the command line.
+[^2]: If you have not installed git on your Windows desktop, run this from the command line: ```winget install git```
