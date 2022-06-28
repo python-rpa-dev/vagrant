@@ -39,5 +39,5 @@ Vagrant.configure("2") do |config|
 
   #   apt-get install -y apache2
   config.vm.provision :shell, path: "scripts/bootstrap_lubuntu_ws.sh", :args => VM_FOLDER, privileged: false
-  config.vm.provision :reload
+  # config.vm.provision :reload
 end
