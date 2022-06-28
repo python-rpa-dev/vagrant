@@ -29,7 +29,7 @@ sudo apt-get install language-pack-de -y
 
 # Install Browsers
 sudo apt-get install firefox firefox-locale-de -y
-sudo apt-get install chromium-browser chromium-browser-l10n -y
+#sudo apt-get install chromium-browser chromium-browser-l10n -y
 
 # Install Python utils
 sudo apt-get install python3-pip pipenv -y

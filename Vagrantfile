@@ -8,7 +8,7 @@ VM_GROUP = "/vagrant"
 VAGRANT_BOX = "ubuntu/focal64"
 
 # Name for VM
-VM_NAME = "lub-ws-64"
+VM_NAME = "sandbox"
 
 # Vagrant folder
 VM_FOLDER = "/vagrant/scripts"
