@@ -38,6 +38,17 @@ Vagrant.configure("2") do |config|
   # information on available options.
 
   #   apt-get install -y apache2
-  config.vm.provision :shell, path: "scripts/bootstrap_lubuntu_ws.sh", :args => VM_FOLDER, privileged: false
-  # config.vm.provision :reload
+  # Standard "base" step
+  config.vm.provision "base", type: "shell" do |script|
+    script.path = "scripts/bootstrap_lubuntu_ws.sh"
+    script.args = VM_FOLDER
+    script.privileged = false
+  end
+
+  config.vm.provision "rpa", type: "shell" do |script|
+    script.path = "scripts/install_rpa_client.sh"
+    script.args = VM_FOLDER
+    script.privileged = false
+  end
+
 end
