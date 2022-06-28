@@ -6,12 +6,12 @@ If you do not want to run the RPA client on your main desktop, this will
 make sure that it is sandboxed in its own environment.
 
 ## Setup
-1. Install VirtualBox from https://www.virtualbox.org/
+1. Install VirtualBox from https://www.virtualbox.org/ or use installer[^1]
     - Go to *Downloads* and choose the appropriate platform package
     - Also download *Virtual Extension Package*
     - Run the setup and consult the documenation if necessary
 
-2. Install vagrant from https://www.vagrantup.com/downloads or use installer[^1]
+2. Install vagrant from https://www.vagrantup.com/downloads or use installer[^2]
     - Make sure you have selected the downloads for your platform
     - Download the install files
     - Run the setup and consult the documenation if necessary 
@@ -40,7 +40,7 @@ make sure that it is sandboxed in its own environment.
 
 4. Create sandbox
 
-    - Clone this repository with git from the command line into a folder.[^2]
+    - Clone this repository with git from the command line into a folder.[^3]
     
     ```
     git clone https://github.com/python-rpa-dev/vagrant.git sandbox
@@ -62,5 +62,8 @@ make sure that it is sandboxed in its own environment.
     Use the vagrant user for now, password is *vagrant*
 
 ---
-[^1]: As an alternative you can use `winget install vagrant` for Windows from the command line.
-[^2]: If you have not installed git on your Windows desktop, run this from the command line: ```winget install git```
+Using installer from Windows Command line, for example cmd.exe:
+
+[^1]: `winget install -e --id Oracle.VirtualBox`
+[^2]: `winget install vagrant`
+[^3]: `winget install git`
